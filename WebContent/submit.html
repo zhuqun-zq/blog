@@ -17,8 +17,8 @@
     $('#sender').click(function(){  
         var id=document.getElementById('id').value;  
         var name=document.getElementById('name').value;  
-        var category={"userName":name,"id":id,"update_time":"11","create_time"};  
-        var jsonData = JSON.stringify(category);
+        var user={"userName":name,"password":id};  
+        var jsonData = JSON.stringify(user);
         var page="submitUser";  
         
         $.ajax({

@@ -25,8 +25,9 @@ public interface UserMapper {
     public List<User> list(Page page);
     
       
-    public int total();  
+    public int total(); 
     
+    public User getByUsername(String userName);
     
     
 }

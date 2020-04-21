@@ -12,14 +12,12 @@
        
     <script>  
     $('#sender').click(function(){  
-        var url="getOneCategory";  
+        var url="getOneUser";  
         $.post(
                 url, 
                 function(data) {
                      var json=JSON.parse(data);  
-                     var name =json.category.name;  
-                     var id = json.category.id;
-                     $("#messageDiv").html("分类id："+ id + "<br>分类名称:" +name );
+                     console.log(json)
                       
          });   
     });  

@@ -28,6 +28,9 @@
 	    </select>
 	    <select id="total" resultType="int">
 	        select count(*) from   User      
-	    </select>	    	    
+	    </select>	
+	    <select id="getByUsername" parameterType="String" resultType="User">
+	        select * from   User  where userName= #{userName}    
+	    </select>    	    
 	</mapper>
 

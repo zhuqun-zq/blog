@@ -14,5 +14,7 @@ public interface UserService {
 	void update(User c);
 	void delete(User c);
 	User get(int id);
+	
+	int checkPassword(String userName,String password);
 
 }
