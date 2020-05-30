@@ -14,6 +14,7 @@
 <script src="<%=basePath%>/js/jquery.min.js"></script>
 <script src="<%=basePath%>/js/popper.min.js"></script>
 <script src="<%=basePath%>/js/bootstrap.min.js"></script>
+<script src="<%=basePath%>/js/homepage.js"></script>
 <title>首页</title>
 </head>
 <body>
@@ -64,42 +65,7 @@
 		<div class="col-md-6">
 			<div class="row">
 				<div class="col-md-12">
-				三方的订单多多多多多多付多所所所所所所所所所所所所所所所所所所所所所所所所
-				方式哒哒哒哒哒哒多所付多
-				辐射度方法反反复复付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付
-				三方的订单多多多多多多付多所所所所所所所所所所所所所所所所所所所所所所所所
-				方式哒哒哒哒哒哒多所付多
-				辐射度方法反反复复付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付
-				三方的订单多多多多多多付多所所所所所所所所所所所所所所所所所所所所所所所所
-				方式哒哒哒哒哒哒多所付多
-				辐射度方法反反复复付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付
-				三方的订单多多多多多多付多所所所所所所所所所所所所所所所所所所所所所所所所
-				方式哒哒哒哒哒哒多所付多
-				辐射度方法反反复复付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付
-				三方的订单多多多多多多付多所所所所所所所所所所所所所所所所所所所所所所所所
-				方式哒哒哒哒哒哒多所付多
-				辐射度方法反反复复付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付
-				三方的订单多多多多多多付多所所所所所所所所所所所所所所所所所所所所所所所所
-				方式哒哒哒哒哒哒多所付多
-				辐射度方法反反复复付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付
-				三方的订单多多多多多多付多所所所所所所所所所所所所所所所所所所所所所所所所
-				方式哒哒哒哒哒哒多所付多
-				辐射度方法反反复复付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付
-				三方的订单多多多多多多付多所所所所所所所所所所所所所所所所所所所所所所所所
-				方式哒哒哒哒哒哒多所付多
-				辐射度方法反反复复付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付
-				三方的订单多多多多多多付多所所所所所所所所所所所所所所所所所所所所所所所所
-				方式哒哒哒哒哒哒多所付多
-				辐射度方法反反复复付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付
-				三方的订单多多多多多多付多所所所所所所所所所所所所所所所所所所所所所所所所
-				方式哒哒哒哒哒哒多所付多
-				辐射度方法反反复复付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付
-				三方的订单多多多多多多付多所所所所所所所所所所所所所所所所所所所所所所所所
-				方式哒哒哒哒哒哒多所付多
-				辐射度方法反反复复付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付
-				三方的订单多多多多多多付多所所所所所所所所所所所所所所所所所所所所所所所所
-				方式哒哒哒哒哒哒多所付多
-				辐射度方法反反复复付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付付	
+				主页内容	
 				</div>
 			</div>
 			<div class="row">
@@ -134,21 +100,8 @@
 		</div>
 		<div class="col-md-3">
 			<div class="list-group">
-				 <a href="#" class="list-group-item list-group-item-action active">这里可以房未来的计划</a>
-				<div class="list-group-item">
-					List header
-				</div>
-				<div class="list-group-item">
-					<h4 class="list-group-item-heading">
-						List group item heading
-					</h4>
-					<p class="list-group-item-text">
-						...
-					</p>
-				</div>
-				<div class="list-group-item justify-content-between">
-					Help <span class="badge badge-secondary badge-pill">14</span>
-				</div> <a href="#" class="list-group-item list-group-item-action active justify-content-between">Home <span class="badge badge-light badge-pill">14</span></a>
+				 <a href="#" class="list-group-item list-group-item-action active" data-toggle="modal" data-target="#myModal">这里可以放未来的计划</a>
+				
 			</div>
 		</div>
 	</div>
@@ -157,6 +110,36 @@
 		这里是页脚
 		</div>
 	</div>
+	
+	
+	<!-- 模态框 -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+   
+        <!-- 模态框头部 -->
+        <div class="modal-header">
+          <h4 class="modal-title">模态框头部</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+   
+        <!-- 模态框主体 -->
+        <div class="modal-body">
+          <label style="float: left;" for="planTitle"> 计划名称</label>
+          <input type="text" class="form-control" id="planTitle" name='planTitle' " />
+          <label style="float: left;" for="planContext"> 计划内容</label>
+          <input type="text" class="form-control" id="planContext" name='planContext' " />
+        </div>
+   
+        <!-- 模态框底部 -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="smbmitPlan()">保存</button>
+        </div>
+   
+      </div>
+    </div>
+  </div>
 </div>
 </body>
 </html>

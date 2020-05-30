@@ -5,7 +5,7 @@
 
 	<mapper namespace="com.blog.mapper.UserMapper">
 	    <insert id="add" parameterType="User" >
-	        insert into User ( name ) values (#{name})    
+	        insert into User (username,password,create_time,update_time,role) values (#{userName},#{password},now(),now(),#{role})    
 	    </insert>
 	    
 	    <delete id="delete" parameterType="User" >

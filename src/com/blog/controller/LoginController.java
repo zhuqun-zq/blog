@@ -2,11 +2,13 @@ package com.blog.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.blog.pojo.User;
 import com.blog.service.UserService;
 
 @Controller
@@ -29,6 +31,18 @@ public class LoginController {
 			mav.setViewName("loginFail");
 		}
         return mav;
+    }
+	
+	@ResponseBody
+	@RequestMapping("/login/addNewUser")
+    public String addNewUser(@RequestBody User user) {
+    	//System.out.println(userName+password);
+    	//us.checkPassword(userName, password);
+		String result="111";
+		System.out.println("提交的信息为:"+user);
+		user.setRole("1");
+		us.add(user);
+		return result;
     }
     
 }
